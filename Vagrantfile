@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   host_username = "j" # Change this to your username
 
   if Vagrant::Util::Platform.windows?
-    host_directory = "C:/Users/#{host_username}/documents"
+    host_directory = "C:/Users/#{host_username}/documents/learning-rails"
   elsif Vagrant::Util::Platform.platform =~ /^darwin/
   	`mkdir -p $HOME/leraning-rails`
   	host_directory = "/Users/#{host_username}/learning-rails"
